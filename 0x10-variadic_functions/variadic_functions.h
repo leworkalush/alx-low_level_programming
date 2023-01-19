@@ -1,11 +1,8 @@
-#ifndef VARIADIC_FNS
-#define VARIADIC_FNS
-#define VALIDTYPESCONDITIONAL(i) (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')
-typedef struct validTypes
-{
-	char *valid;
-	void (*f)();
-} v_types;
+#ifndef VARIADIC_FUNCTIONS
+#define VARIADIC_FUNCTIONS
+
+#include <stdio.h>
+#include <stdarg.h>
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
